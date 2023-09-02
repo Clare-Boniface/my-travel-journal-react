@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.container {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 45px;
+}
+
+header {
+  background-color: #f55a5a;
+  color: white;
+  width: 100%;
+  height: 55px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.header-icon {
+  width: 24px;
+  height: 24px;
+}
+.header-title {
+  color: #fff;
+  font-size: 14.461px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.085px;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 2em;
+}
+.photo-image {
+  display: block;
+  width: 125px;
+  height: 168px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 19px;
+}
+
+.country-details,
+.date-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card-country {
+  color: #2b283a;
+  font-family: Inter;
+  font-size: 10.24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.741px;
+  margin-right: 12px;
+  margin-left: 4px;
+}
+
+.card-google-link {
+  color: #918e9b;
+  font-family: Inter;
+  font-size: 10.24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.card-title {
+  color: #2b283a;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 7px 0;
+}
+.card-date-details {
+  color: #2b283a;
+  font-family: Inter;
+  font-size: 10.24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-description {
+  color: #2b283a;
+  font-family: Inter;
+  font-size: 10.24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 15.36px */
+  margin-top: 9px;
+}
+
+footer {
+  background-color: #f55a5a;
+  font-size: 0.6rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.8em;
+}
