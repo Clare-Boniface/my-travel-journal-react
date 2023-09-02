@@ -12,12 +12,14 @@ body {
   font-family: Inter, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
 }
 .container {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 45px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5em;
 }
 
 header {
@@ -47,21 +49,19 @@ header {
 
 .card {
   display: flex;
+  flex-direction: column;
   margin-bottom: 2em;
 }
 .photo-image {
   display: block;
-  width: 125px;
-  height: 168px;
-  flex-shrink: 0;
+  width: 100%;
   border-radius: 5px;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  object-fit: cover;
 }
 .card-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 19px;
 }
 
 .country-details,
@@ -69,6 +69,11 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  /* margin-top: 1em; */
+}
+
+.country-details {
+  margin-top: 1em;
 }
 .card-country {
   color: #2b283a;
@@ -100,7 +105,7 @@ header {
   line-height: normal;
   margin: 7px 0;
 }
-.card-date-details {
+.date-details {
   color: #2b283a;
   font-family: Inter;
   font-size: 10.24px;
@@ -125,4 +130,62 @@ footer {
   width: 100%;
   text-align: center;
   padding: 0.8em;
+}
+
+@media (min-width: 550px) {
+  .card {
+    flex-direction: row;
+  }
+  .photo-image {
+    width: 125px;
+    height: 168px;
+  }
+  .card-details {
+    margin-left: 19px;
+  }
+  .card-description {
+    font-size: 0.8rem;
+  }
+  .country-details {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 2em;
+  }
+
+  .photo-image {
+    width: 250px;
+    height: 400px;
+  }
+  .card-details {
+    margin-left: 19px;
+  }
+  .card {
+    margin-bottom: 3em;
+  }
+  .card-country {
+    font-size: 1.2rem;
+  }
+  .card-google-link {
+    font-size: 1rem;
+  }
+  .card-description {
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+  .card-title {
+    font-size: 2rem;
+    margin: 1em 0;
+  }
+  .date-details {
+    font-size: 1.2rem;
+  }
+  .location-icon {
+    font-size: 1rem;
+    width: 30px;
+    border: 2px solid green;
+  }
 }

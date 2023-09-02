@@ -8,6 +8,7 @@ export default function Card(props) {
         <div className="card-details">
           <div className="country-details">
             <svg
+              className="location-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="7"
               height="10"
